@@ -22,7 +22,7 @@ export default function Header() {
             </a>
           </div>
           <div className="nav-item has-sub toggle-hover" id="dropdown">
-            <a href='#' className="nav-dropdown-link">Projects</a>
+            <a href='/#' className="nav-dropdown-link">Projects</a>
             <ul className="dropdown-menu dropdown-animated" role="menu">
               <li><a href="https://github.com/Borismeister/calorie_counter" target="_blank" rel="noreferrer">Calorie Counter</a></li>
             </ul>
