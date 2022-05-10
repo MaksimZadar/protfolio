@@ -16,18 +16,17 @@ export default function ContactSlide() {
               <h3 className="subtitle text-success">using this form.</h3>
             </div>
             <div className="col-6">
-              <form onSubmit={(e) => {
-                e.preventDefault();
-                alert("Hello");
-              }}>
+              <form name="contact-form" method="POST">
+                <input type="hidden" name="form-name" value="contact-form" />
                 <div className="row col-12">
                   <label className="font-bold text-white">Name</label>
                   <input
-                    type="name"
+                    type="text"
                     value={name}
                     onChange={val => setName(val.target.value)}
                     className="form-group-input"
                     placeholder="John Doe"
+                    name='name'
                     required />
                 </div>
                 <div className="row col-12">
@@ -38,6 +37,7 @@ export default function ContactSlide() {
                     onChange={val => setEmail(val.target.value)}
                     className="form-group-input"
                     placeholder="example@mail.com"
+                    name='email'
                     required />
                 </div>
                 <div className="row col-12 mb-2">
@@ -46,6 +46,7 @@ export default function ContactSlide() {
                     value={message}
                     onChange={val => setMessage(val.target.value)}
                     placeholder="Enter your message"
+                    name='message'
                     required></textarea>
                 </div>
                 <div className="row col-12">
