@@ -1,8 +1,6 @@
 import './Header.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-//TODO: Remove projects drop down (or keep it only for mobile maybe idk)
-
 export default function Header() {
   return (
     <div className="header header-fixed u-unselectable header-animated">
@@ -21,7 +19,7 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className='header-nav'>
+      {/* <div className='header-nav'>
         <div className="nav-left">
           <div className="nav-item has-sub toggle-hover" id="dropdown">
             <a href='/#' className="nav-dropdown-link">Projects</a>
@@ -30,7 +28,7 @@ export default function Header() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
