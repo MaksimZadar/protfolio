@@ -19,7 +19,7 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className='header-nav'>
+      {/* <div className='header-nav'>
         <div className="nav-left">
           <div className="nav-item has-sub toggle-hover" id="dropdown">
             <a href='/#' className="nav-dropdown-link">Projects</a>
@@ -28,7 +28,7 @@ export default function Header() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
