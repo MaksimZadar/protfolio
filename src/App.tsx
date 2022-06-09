@@ -1,18 +1,11 @@
-import './App.scss';
-import ContactSlide from './components/contact_slide/ContactSlide';
-import Header from './components/header/Header';
-import LandingHero from './components/landing_hero/LandingHero';
-import ProjectsSlide from './components/projects_slide/ProjectsSlide';
+import "./App.scss";
+import useSound from "use-sound";
+const mainTheme = require("./assets/bg_music.mp3");
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <LandingHero />
-      <ProjectsSlide />
-      <ContactSlide />
-    </div>
-  );
+  const [play] = useSound(mainTheme, { volume: 0.1 });
+
+  return <div className="App" onClick={() => play()}></div>;
 }
 
 export default App;
